@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RiseNet Wallet</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin-top: 50px;
+      padding: 20px;
+    }
+    .balance-card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 300px;
+      margin: 0 auto 30px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    .balance-card h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      background: #00ffcc;
+      color: #000;
+      padding: 12px 24px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #00ddb3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>RiseNet Wallet 💼</h2>
+    <div class="balance-card">
+      <p>Current Balance:</p>
+      <h1>KES 0.00</h1>
+    </div>
+    <button class="btn" onclick="deposit()">Deposit</button>
+    <button class="btn" onclick="withdraw()">Withdraw</button>
+  </div>
+
+  <script>
+    // Telegram WebApp API (Mini App)
+    let tg = window.Telegram.WebApp;
+    tg.expand();
+
+    function deposit() {
+      alert("Deposit flow coming soon!");
+      // Future: Open M-PESA STK Push
+    }
+
+    function withdraw() {
+      alert("Withdraw logic coming soon!");
+      // Future: Withdraw flow with balance check
+    }
+  </script>
+</body>
+</html>
